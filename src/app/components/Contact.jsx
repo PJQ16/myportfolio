@@ -5,9 +5,10 @@ export default function Contact() {
     <section
       id="contact"
       className="min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-white px-6 relative"
-      style={{ backgroundImage: "url('https://cdn.pixabay.com/photo/2015/01/25/21/02/phone-612061_1280.jpg')" }}
+     style={{
+        backgroundImage: "url('/images/ct.png')",
+      }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
       <div className="relative z-10 max-w-6xl w-full flex flex-col md:flex-row gap-10 p-10 bg-[#0a192f]/80 rounded-xl shadow-lg backdrop-blur-sm">
         <div className="flex-1 space-y-6">
           <h2 className="text-4xl font-bold text-cyan-400 mb-4">Get in Touch</h2>
