@@ -11,9 +11,9 @@ export default function Home() {
     <>
     <Navbar />
       <Personal/>
-      <Experience />
+       <Portfolio />
       <Tools />
-      <Portfolio />
+        <Experience />
       <Contact />
     </>
   );

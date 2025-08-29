@@ -22,22 +22,22 @@ export default function Tools() {
   return (
     <section
       id="tools"
-      className="min-h-screen flex flex-col justify-center items-center bg-[#0a192f] text-white px-6"
+      className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-gray-800 px-6"
     >
       <div className="max-w-5xl w-full text-center">
-        <h2 className="text-4xl font-bold text-cyan-400 mb-10">Tools & Technologies</h2>
+        <h2 className="text-4xl font-bold text-cyan-500 mb-10">Tools & Technologies</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center bg-gray-300 p-4 rounded-xl shadow-lg hover:scale-105 transition duration-300"
+              className="flex flex-col items-center justify-center bg-white p-4 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition duration-300"
             >
               <img
                 src={tool.icon}
                 alt={tool.name}
                 className="w-12 h-12 mb-2 object-contain"
               />
-              <p className="text-gray-900 text-sm">{tool.name}</p>
+              <p className="text-gray-800 font-medium text-sm">{tool.name}</p>
             </div>
           ))}
         </div>
