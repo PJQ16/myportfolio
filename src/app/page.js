@@ -8,13 +8,13 @@ import Personal from "./components/Personal";
 
 export default function Home() {
   return (
-    <>
-    <Navbar />
-      <Personal/>
+    <div className="w-screen h-screen">
+       <Navbar />
+        <Personal/>
        <Portfolio />
       <Tools />
         <Experience />
       <Contact />
-    </>
+    </div>
   );
 }

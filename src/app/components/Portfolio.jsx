@@ -66,7 +66,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="min-h-screen flex flex-col justify-center items-center bg-[#112240] text-white px-6">
-      <div className="max-w-6xl text-center">
+      <div className="w-full text-center">
        <h2 className="text-4xl font-bold text-cyan-400 mb-6">Our Works</h2>
         {/* Swiper */}
         <Swiper
@@ -85,7 +85,7 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
               <div
-                className="bg-[#0a192f] p-4 rounded-lg shadow hover:shadow-lg transition duration-300 cursor-pointer"
+                className="bg-[#0a192f] p-4 rounded-lg shadow hover:shadow-lg transition duration-300 cursor-pointer w-full"
                 onClick={() => openModal(index)}
               >
                 <img src={project.imageUrl} alt={project.title} className="rounded-md mb-2" />
@@ -99,7 +99,7 @@ export default function Portfolio() {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 w-full">
           <motion.div
             className="bg-white text-black p-6 rounded-lg max-w-3xl w-full relative flex flex-col items-center"
             initial={{ opacity: 0, scale: 0.9 }}
